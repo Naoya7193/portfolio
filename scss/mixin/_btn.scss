@@ -1,0 +1,22 @@
+$initType: 'normal';
+@mixin btn($type:$initType){
+    @if( $type == 'normal' ){
+        display: block;
+        text-align: center;
+        width: 22%;
+        padding: 12px 0;
+        font-size: 22px;
+        font-weight: 500;
+        border: 1px solid #969696;
+        min-width: 310px;
+        margin: 0 auto;
+        transition: .3s all;
+
+        position: relative;
+    }
+
+
+    @else if( $type == 'works' ){
+    }
+
+}

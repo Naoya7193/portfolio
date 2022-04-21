@@ -1,0 +1,12 @@
+@use "../setting/color";
+
+// copylight
+
+.copylight{
+    color: color.$white;
+    background-color: #464646;
+    padding: .75em 0;
+    text-align: center;
+    font-size: clamp(14px,1.3vw,18px);
+
+}
