@@ -1,0 +1,125 @@
+@use "../setting/color";
+@use "../mixin/btn";
+
+// 実績紹介
+.performance{
+    position: relative;
+    margin-top: 80px;
+    padding-top: 40px;
+
+    .marker{
+        padding: 0 0.2em;
+        margin-right: 0;
+    }
+
+    .tag_area{
+        top: 0px;
+    }
+
+    &_title{
+        font-weight: 700;
+        font-size: 24px;
+        padding-left: 20px;
+        border-left: 2px solid color.$main-color;
+        margin-bottom: 40px;
+    }
+
+    &_theme{
+        font-family: 'Hiragino Mincho ProN', serif;
+        margin-bottom: 50px;
+        padding-left: 20px;
+    }
+
+    &_inner{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+
+    &_image_box{
+        overflow-y: scroll;
+        margin-right: 3%;
+        width: 45%;
+        height: 98vh;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+
+    &_image{
+        width: 100%;
+    }
+
+    &_textarea{
+        width: 50%;
+    }
+
+    &_text_block{
+        margin-bottom: 40px;
+
+        &_title{
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            padding-left: 28px;
+            position: relative;
+
+            &::before{
+                position: absolute;
+                content: "";
+                border-radius: 999px;
+                background-color: color.$main-color;
+                width: 14px;
+                height: 14px;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+        }
+
+        &_summary{
+            font-size: 16px;
+            padding-left: 8px;
+            line-height: 1.78;
+            text-align: justify;
+        }
+    }
+    
+    &_button{
+        @include btn.btn;
+        color: color.$white;
+        border: unset;
+
+        &.site{
+            background-color: color.$sub-color;
+            margin-bottom: 10px;
+        }
+
+        &.git{
+            background-color: color.$main-color;
+            margin-bottom: 120px;
+        }
+
+        &_text{
+            display: inline-block;
+            padding-right: 40px;
+            font-size: 20px;
+            position: relative;
+
+            &::after{
+                position: absolute;
+                content: "";
+                width: 18px;
+                height: 18px;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                background-image: url(../image/target_blank.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+
+            }
+        }
+
+    }
+
+}

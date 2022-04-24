@@ -111,3 +111,54 @@ html {
         transform: rotate(-45deg) translateY(-50%);
     }
 }
+
+.tag_area{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: -35px;
+    left: 0;
+}
+
+.tag{
+    font-size: 12px;
+    padding: .25em 0;
+    text-align: center;
+    width: 90px;
+    margin-right: 15px;
+    color: color.$white;
+
+    &.team{
+        background-color: #57CBCB;
+    }
+
+    &.cording{
+        background-color: #578DCB;
+    }
+
+    &.design{
+        background-color: #D84175;
+    }
+
+}
+
+// ページタイトル
+.pagetitle{
+    font-family: 'din-2014-narrow',sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    padding-left: 16px;
+    position: relative;
+
+    &::before{
+        position: absolute;
+        content: "";
+        border-left: 3px solid color.$base-color;
+        width: 3px;
+        height: 70%;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

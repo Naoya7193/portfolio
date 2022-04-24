@@ -55,8 +55,8 @@
     <nav class="sidebar_nav">
         <ul>
             <li><a href="/">HOME</a></li>
-            <li><a href="/skill">SKILL</a></li>
-            <li><a href="/works">WORKS</a></li>
+            <li><a href="/#skill">SKILL</a></li>
+            <li><a href="./works">WORKS</a></li>
             <li><a href="/about">ABOUT</a></li>
         </ul>
     </nav>
