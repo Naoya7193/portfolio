@@ -53,11 +53,11 @@
         </div>
     </div>
 
-    <a href="http://" target="_blank" class="performance_button site">
+    <a href="http://xs941337.xsrv.jp/attrait2/" target="_blank" class="performance_button site">
         <p class="performance_button_text">サイトはこちら</p>
     </a>
 
-    <a href="http://" target="_blank" class="performance_button git">
+    <a href="https://github.com/Naoya7193/kitahama_legal_office-2" target="_blank" class="performance_button git">
         <p class="performance_button_text">Gitを確認する</p>
     </a>
 </div>
@@ -113,7 +113,7 @@
         </div>
     </div>
 
-    <a href="http://" target="_blank" class="performance_button site">
+    <a href="https://mkct.co.jp/" target="_blank" class="performance_button site">
         <p class="performance_button_text">サイトはこちら</p>
     </a>
 
@@ -173,11 +173,11 @@
         </div>
     </div>
 
-    <a href="http://" target="_blank" class="performance_button site">
+    <a href="https://fujimetal.f-naoya.com/fujimetal/" target="_blank" class="performance_button site">
         <p class="performance_button_text">サイトはこちら</p>
     </a>
 
-    <a href="http://" target="_blank" class="performance_button git">
+    <a href="https://github.com/Naoya7193/fujimetal" target="_blank" class="performance_button git">
         <p class="performance_button_text">Gitを確認する</p>
     </a>
 </div>

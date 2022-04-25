@@ -123,7 +123,7 @@
                 <h3 class="works_title">キタハマ総合法律事務所</h3>
                 <p class="works_supplement">架空の総合法律事務所</p>
                 <p class="works_summary">「初めての方でも気軽に利用できるサイト作り」をテーマに作成しました。フェイドインページは表示回数が多いと離脱率に貢献してしまうため、キャッシュを用いて表示回数を制御しています。</p>
-                <a href="./works/#kitahama" class="more_read">詳しく見る</a>
+                <a href="./works#kitahama" class="more_read">詳しく見る</a>
             </div>
         </div>
 
@@ -137,7 +137,7 @@
                 <h3 class="works_title">株式会社エムケー</h3>
                 <p class="works_supplement">産業廃棄物収集運搬会社</p>
                 <p class="works_summary">サイトリニューアルを目的としたWPの小テーマの作成を担当しました。ブログの更新機能と問い合わせフォームを搭載しています。</p>
-                <a href="./works/#mk" class="more_read">詳しく見る</a>
+                <a href="./works#mk" class="more_read">詳しく見る</a>
             </div>
         </div>
 
@@ -151,7 +151,7 @@
                 <h3 class="works_title">株式会社ふじ芳金属加工</h3>
                 <p class="works_supplement">架空の金属加工会社</p>
                 <p class="works_summary">視線の誘導を意識してデザインされたサイトのコーディングを担当しました。どのデバイスから閲覧しても同様の視線誘導効果が得られるように意識してコーディングしています。</p>
-                <a href="./works/#fujimetal" class="more_read">詳しく見る</a>
+                <a href="./works#fujimetal" class="more_read">詳しく見る</a>
             </div>
         </div>
     </div>

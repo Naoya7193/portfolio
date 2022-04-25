@@ -745,4 +745,222 @@ html {
   background-size: contain;
   background-position: center;
 }
+
+.about_section {
+  margin-top: 65px;
+  padding-bottom: 20px;
+}
+.about_section_title {
+  display: inline-block;
+  font-family: "din-2014-narrow", sans-serif;
+  font-weight: 700;
+  font-size: 62px;
+  margin-bottom: 40px;
+  padding-left: 40px;
+  position: relative;
+}
+.about_section_title::before {
+  position: absolute;
+  content: "";
+  border-top: 3px solid #222;
+  width: 20px;
+  height: 3px;
+  top: 50%;
+  left: 0;
+}
+.about_section_text {
+  color: #fff;
+  font-weight: 500px;
+  font-size: 22px;
+  margin-bottom: 30px;
+  margin-left: 7.5%;
+}
+.about_section_text:last-child {
+  margin-bottom: 75px;
+}
+.about_section_mv {
+  background-image: url(../image/mv_about.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.about_section_button_box {
+  display: flex;
+  justify-content: space-between;
+  width: 44%;
+  margin: 0 auto;
+  height: auto;
+}
+.about_section_button {
+  display: block;
+  width: 45%;
+  min-width: 204px;
+  font-family: "din-2014-narrow", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  background-color: #fff;
+  text-align: center;
+  padding: 0.25em 0;
+}
+
+.motto {
+  display: flex;
+  justify-content: space-between;
+}
+.motto_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+}
+.motto_box_title_block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 28px;
+}
+.motto_box_number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8AC6D1;
+  color: #fff;
+  font-family: "Helvetica", sans-serif;
+  font-weight: 600;
+  font-size: 27px;
+  width: 50px;
+  height: 50px;
+}
+.motto_box_title {
+  margin-left: 28px;
+  font-size: 28px;
+  font-weight: 500;
+}
+.motto_box_image {
+  padding-bottom: 25px;
+}
+.motto_box_text {
+  letter-spacing: 0.08em;
+  line-height: 2;
+  font-size: 18px;
+  text-align: justify;
+  padding-top: 30px;
+  position: relative;
+}
+.motto_box_text span {
+  color: #8AC6D1;
+  font-weight: 500;
+}
+.motto_box_text::after {
+  position: absolute;
+  content: "";
+  border-bottom: 1px solid #8AC6D1;
+  width: 40%;
+  height: 1px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.career {
+  margin-bottom: 100px;
+}
+.career_box {
+  display: flex;
+}
+.career_year {
+  width: 18%;
+}
+.career_year_box {
+  width: 60px;
+  height: 60px;
+  margin-left: 22%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.career_year_box::before {
+  position: absolute;
+  content: "";
+  border: 1.5px solid #8AC6D1;
+  border-radius: 999px;
+  width: 100%;
+  height: 100%;
+}
+.career_year_box::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  content: "1996";
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background-color: #8AC6D1;
+  border-radius: 999px;
+  width: 70%;
+  height: 70%;
+}
+.career_textarea {
+  width: 82%;
+  margin-bottom: 70px;
+}
+.career_title {
+  display: inline-block;
+  background-color: #578DCB;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 0.5em 1.5em;
+  margin-bottom: 30px;
+  position: relative;
+}
+.career_title::before {
+  position: absolute;
+  content: "";
+  border-left: 3px solid #fff;
+  height: 100%;
+  margin-left: 10px;
+  top: 0;
+  left: 0;
+}
+.career_text {
+  line-height: 1.68;
+  text-align: justify;
+}
+.career_text span {
+  color: #8AC6D1;
+  font-weight: 500;
+}
+.career_award {
+  display: flex;
+  margin-top: 35px;
+}
+.career_award_title {
+  display: inline-block;
+  padding-left: 15px;
+  font-weight: 700;
+  position: relative;
+}
+.career_award_title::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  border-left: 5px solid #8AC6D1;
+  height: 1.5em;
+}
+.career_award_textarea {
+  margin-left: 35px;
+}
+.career_award_textarea p {
+  margin-bottom: 0.5em;
+}
+.career_award_textarea p:last-child {
+  margin-bottom: unset;
+}
 /*# sourceMappingURL=style.css.map */
