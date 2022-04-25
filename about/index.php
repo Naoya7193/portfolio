@@ -62,7 +62,7 @@
     <div class="career">
         <div class="career_box">
             <div class="career_year">
-                <div class="career_year_box"></div>
+                <div class="career_year_box">1996</div>
             </div>
             <div class="career_textarea">
                 <div class="career_title">奈良県生まれ奈良県育ち</div>
@@ -74,7 +74,7 @@
 
         <div class="career_box">
             <div class="career_year">
-                <div class="career_year_box"></div>
+                <div class="career_year_box">2003</div>
             </div>
             <div class="career_textarea">
                 <div class="career_title">部活動と勉強の両立</div>
@@ -93,7 +93,7 @@
 
         <div class="career_box">
             <div class="career_year">
-                <div class="career_year_box"></div>
+                <div class="career_year_box">2012</div>
             </div>
             <div class="career_textarea">
                 <div class="career_title">奈良県立奈良高等学校に進学</div>
@@ -103,7 +103,7 @@
 
         <div class="career_box">
             <div class="career_year">
-                <div class="career_year_box"></div>
+                <div class="career_year_box">2015</div>
             </div>
             <div class="career_textarea">
                 <div class="career_title">同志社大学文化情報学部に進学</div>
@@ -113,7 +113,7 @@
 
         <div class="career_box">
             <div class="career_year">
-                <div class="career_year_box"></div>
+                <div class="career_year_box">2017</div>
             </div>
             <div class="career_textarea">
                 <div class="career_title">1年間早稲田大学文化構想学部に交換留学</div>
@@ -130,7 +130,7 @@
 
         <div class="career_box">
             <div class="career_year">
-                <div class="career_year_box"></div>
+                <div class="career_year_box">2018</div>
             </div>
             <div class="career_textarea">
                 <div class="career_title">同志社大学にて研究に専念</div>
@@ -147,7 +147,7 @@
 
         <div class="career_box">
             <div class="career_year">
-                <div class="career_year_box"></div>
+                <div class="career_year_box">2019</div>
             </div>
             <div class="career_textarea">
                 <div class="career_title">チームラボ株式会社に入社</div>
@@ -156,8 +156,8 @@
         </div>
 
         <div class="career_box">
-            <div class="career_year">
-                <div class="career_year_box"></div>
+            <div class="career_year last">
+                <div class="career_year_box">2021</div>
             </div>
             <div class="career_textarea">
                 <div class="career_title">Webスクールへの通学を開始</div>
