@@ -65,6 +65,7 @@
         background-color: color.$white;
         text-align: center;
         padding: .25em 0;
+        transition: .3s all;
 
         position: relative;
 
@@ -79,6 +80,17 @@
             right: 5%;
             width: 8px;
             height: 8px;
+        }
+
+        &:hover{
+            background-color: color.$main-color;
+            color: color.$white;
+
+            &::after{
+                border: 1px solid color.$white;
+                border-top: 0;
+                border-right: 0;
+            }
         }
     }
 

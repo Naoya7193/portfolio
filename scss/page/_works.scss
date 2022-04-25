@@ -87,6 +87,11 @@
         @include btn.btn;
         color: color.$white;
         border: unset;
+        transition: .3s all;
+
+        &:hover{
+            opacity: .7;
+        }
 
         &.site{
             background-color: color.$sub-color;
