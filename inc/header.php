@@ -63,6 +63,14 @@
 </div>
 
 
+<!-- スマホ用ヘッダー -->
+<div class="header">
+    <div class="header_inner wrapper_sp_lg">
+        <img src="./image/logo.png" alt="ロゴの画像" class="header_logo">
+        <div class="hamburger_menu"></div>
+    </div>
+</div>
+
 
 <!-- トップに戻る -->
 <div class="return_top wrapper"><a href="#top"></a></div>

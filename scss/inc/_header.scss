@@ -1,6 +1,13 @@
+@use "../setting/color";
+@use "../setting/function";
+
 // id="top"
 .top{
     padding-bottom: 70px;
+
+    @include function.mq() {
+        display: none;
+    }
 }
 
 // 固定ナビ
@@ -11,16 +18,20 @@
     transition: .3s all;
     z-index: 20;
 
+    @include function.mq(){
+        display: none;
+    }
+
     &_logo{
         display: block;
-        width: 80px;
-        height: 40px;
+        width: clamp(60px,5.8vw,80px);
         font-size: clamp(62px,5.8vw,80px);
         background-image: url(../image/logo.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
         margin-bottom: 35px;
+        aspect-ratio: 2/1;
 
         &:hover{
             opacity: .7;
@@ -42,6 +53,30 @@
     }
 }
 
+// スマホ用ヘッダー
+.header{
+    display: none;
+
+    @include function.mq() {
+        width: 100%;
+        opacity: .9;
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        background-color: color.$white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        z-index: 20;
+    }
+
+    &_logo{
+        @include function.mq() {
+            width: 80px;
+        }
+    }
+}
+
 // トップに戻るボタン
 .return_top{
     position: fixed;
@@ -56,6 +91,12 @@
     transition: .3s all;
 
     z-index: 20;
+
+    @include function.mq() {
+        bottom: 4%;
+        width: 40px;
+        height: 40px;
+    }
 
     &:hover{
         opacity: .6;

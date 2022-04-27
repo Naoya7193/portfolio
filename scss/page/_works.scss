@@ -33,14 +33,14 @@
     &_inner{
         display: flex;
         justify-content: space-between;
-        margin-bottom: 100px;
+        margin-bottom: clamp(80px,7.1vw,100px);
     }
 
     &_image_box{
         overflow-y: scroll;
         margin-right: 3%;
         width: 45%;
-        height: 98vh;
+        height: 95vh;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     }
 
@@ -53,10 +53,10 @@
     }
 
     &_text_block{
-        margin-bottom: 40px;
+        margin-bottom: clamp(32px,2.9vw,40px);
 
         &_title{
-            font-size: 18px;
+            font-size: clamp(16px,1.3vw,18px);
             font-weight: 700;
             margin-bottom: 15px;
             padding-left: 28px;
@@ -76,7 +76,7 @@
         }
 
         &_summary{
-            font-size: 16px;
+            font-size: clamp(14px,1.2vw,16px);
             padding-left: 8px;
             line-height: 1.78;
             text-align: justify;
@@ -106,14 +106,16 @@
         &_text{
             display: inline-block;
             padding-right: 40px;
-            font-size: 20px;
+            font-size: clamp(16px,1.5vw,20px);
             position: relative;
+
+            $tb_clp: clamp(14px,1.3vw,18px);
 
             &::after{
                 position: absolute;
                 content: "";
-                width: 18px;
-                height: 18px;
+                width: $tb_clp;
+                height: $tb_clp;
                 top: 50%;
                 right: 0;
                 transform: translateY(-50%);

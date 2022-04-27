@@ -11,6 +11,26 @@
     background-position: center;
     position: relative;
 
+    @include function.mq() {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        width: 100%;
+        aspect-ratio: 1/1;
+        background-position: center left;
+        text-align: unset;
+    }
+
+    &_inner{
+        padding-top: 180px;
+        padding-bottom: 150px;
+
+        @include function.mq() {
+            padding-top: unset;
+            padding-bottom: 20px;
+        }
+    }
+
     $mv_length: clamp(200px,16.5vw,230px);
 
     &::before{
@@ -24,6 +44,10 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
+
+        @include function.mq() {
+            content: none;
+        }
     }
 
     .myname{
@@ -32,8 +56,12 @@
         font-weight: 700;
         font-style: normal;
         color: color.$white;
-        padding-top: 180px;
         margin-bottom: 20px;
+
+        @include function.mq() {
+            font-size: 13vw;
+            margin-bottom: 5px;
+        }
 
     }
     
@@ -41,7 +69,10 @@
         font-size: 1.8vw;
         color: color.$white;
         font-weight: 500;
-        padding-bottom: 150px;
+
+        @include function.mq() {
+            font-size: 4vw;
+        }
     }
 }
 
@@ -49,6 +80,11 @@
 .skill{
     margin-top: 160px;
     margin-bottom: 120px;
+
+    @include function.mq() {
+        margin-top: 70px;
+        width: 100%;
+    }
 
     &_container{
         display: flex;
@@ -226,6 +262,9 @@
 
 // WORKS
 .works{
+    @include function.mq() {
+        width: 100%;
+    }
 
     &_box{
         display: flex;
@@ -234,17 +273,32 @@
         position: relative;
         padding-top: 32px;
         min-height: 240px;
+
+        @include function.mq() {
+            align-items: center;
+            flex-direction: column-reverse;
+            margin-bottom: 40px;
+        }
     }
 
     &_image{
         width: 39%;
         object-fit: contain;
         min-width: 220px;
+
+        @include function.mq() {
+            width: 80%;
+            margin-top: 15px;
+        }
     }
 
     &_textarea{
         width: 53%;
         position: relative;
+
+        @include function.mq() {
+            width: 100%;
+        }
 
         .more_read{
             color: color.$sub-color;
@@ -254,6 +308,11 @@
             bottom: 0;
             position: absolute;
             transition: .3s opacity;
+
+            @include function.mq() {
+                font-size: 12px;
+                right: 5px;
+            }
 
             &:hover{
                 opacity: .8;
@@ -277,6 +336,12 @@
                 transform: rotate(-45deg) translateY(-50%);
                 right: -20px;
                 top: calc(50% - 4px);
+
+                @include function.mq() {
+                    width: 5px;
+                    height: 5px;
+                    right: -12px;
+                }
             }
 
             &::before{
@@ -298,6 +363,10 @@
         font-weight: 600;
         font-size: clamp(22px,2vw,28px);
         margin-bottom: 10px;
+
+        @include function.mq() {
+            font-size: 20px;
+        }
     }
 
     &_supplement{
@@ -306,6 +375,10 @@
         margin-bottom: clamp(10px, 1.2vw, 20px);
         padding-left: 20px;
         position: relative;
+
+        @include function.mq() {
+            display: none;
+        }
 
         &::before{
             position: absolute;
@@ -321,12 +394,28 @@
         line-height: 1.75;
         font-size:clamp(14px,1.5vw,20px);
         text-align: justify;
+
+        @include function.mq() {
+            display: none;
+        }
     }
 }
 
 // ABOUT
 .about{
     margin-top: 120px;
+
+    @include function.mq() {
+        width: 100%;
+    }
+
+    .section_inner{
+        @include function.mq() {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 
     &_name_box{
         display: flex;
@@ -340,6 +429,12 @@
         font-size: 26px;
         padding-left: 25px;
         position: relative;
+
+        @include function.mq() {
+            font-size: 22px;
+            margin-right: 28px;
+            padding-left: 18px;
+        }
 
         &::before{
             position: absolute;
@@ -356,6 +451,11 @@
         margin-right: 18px;
         transition: .3s all;
 
+        @include function.mq() {
+            width: 24px;
+            margin-right: 10px;
+        }
+
         &:hover{
             opacity: .6;
         }
@@ -367,12 +467,22 @@
         align-items: flex-end;
         margin-bottom: 100px;
         padding-top: 50px;
+
+        @include function.mq() {
+            margin-bottom: 40px;
+            padding-top: 40px;
+        }
     }
 
     &_text{
         line-height: 2em;
         margin-bottom: 50px;
         font-size: clamp(15px,1.9vw,20px);
+
+        @include function.mq() {
+            font-size: 14px;
+            margin-bottom: 40px;
+        }
 
         &:last-child{
             margin-bottom: unset;
@@ -392,20 +502,31 @@
         background-repeat: no-repeat;
         background-size: 90%;
         background-position: center right;
+
+        @include function.mq() {
+            display: none;
+        }
     }
 }
 
 // ビジョン
 .vision{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: color.$sub-color;
     margin-top: 120px;
     margin-bottom: 120px;
     padding: 85px 0;
 
     position: relative;
+
+    @include function.mq() {
+        padding: 40px 0 65px;
+    }
+
+    &_inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     &::after{
         position: absolute;
@@ -414,6 +535,10 @@
         width: 100%;
         left: 0;
         bottom: 18px;
+
+        @include function.mq() {
+            bottom: 10px;
+        }
     }
 
     &_title_box{
@@ -422,17 +547,30 @@
         margin-bottom: 50px;
         padding-bottom: 10px;
         border-bottom: 1px solid color.$white;
+
+        @include function.mq() {
+            justify-content: center;
+            margin-bottom: 35px;
+        }
     }
 
     &_title_image{
         width: 38px;
         margin-right: 20px;
+
+        @include function.mq() {
+            width: 7vw;
+        }
     }
 
     &_title{
         color: color.$white;
         font-size: 32px;
         font-weight: 500;
+
+        @include function.mq() {
+            font-size: 5vw;
+        }
     }
 
     &_maincopy{
@@ -448,6 +586,23 @@
         font-weight: 500;
         margin-bottom: 80px;
         position: relative;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+        @include function.mq() {
+            width: 100%;
+            font-size: 18px;
+            margin-bottom: 48px;
+            line-height: 1.25;
+            min-width: unset;
+        }
+
+        br{
+            display: none;
+
+            @include function.mq() {
+                display: block;
+            }
+        }
 
         &::before{
             position: absolute;
@@ -456,6 +611,10 @@
             height: 100%;
             left: 20px;
             top: 0;
+
+            @include function.mq() {
+                left: 2%;
+            }
         }
     }
 
@@ -469,6 +628,14 @@
         letter-spacing: .1em;
         margin-bottom: 60px;
         font-size: clamp(18px,1.5vw,20px);
+
+        @include function.mq() {
+            width: 100%;
+            font-size: 16px;
+            text-align: justify;
+            line-height: 1.5;
+            margin-bottom: 40px;
+        }
 
         &:last-child{
             margin-bottom: unset;

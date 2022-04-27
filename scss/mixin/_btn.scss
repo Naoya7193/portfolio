@@ -1,18 +1,25 @@
+@use "../setting/function";
+
 $initType: 'normal';
 @mixin btn($type:$initType){
     @if( $type == 'normal' ){
         display: block;
         text-align: center;
-        width: 22%;
+        width: 26%;
         padding: 12px 0;
-        font-size: 22px;
+        font-size: clamp(18px,2vw,22px);
         font-weight: 500;
         border: 1px solid #969696;
-        min-width: 310px;
+        min-width: 250px;
         margin: 0 auto;
         transition: .3s all;
 
         position: relative;
+
+        @include function.mq() {
+            font-size: 16px;
+            min-width: 200px;
+        }
     }
 
 
