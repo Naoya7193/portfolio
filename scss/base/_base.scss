@@ -209,6 +209,11 @@ html {
     padding-left: 16px;
     position: relative;
 
+    @include function.mq() {
+        font-size: 36px;
+        margin-top: 10px;
+    }
+
     &::before{
         position: absolute;
         content: "";

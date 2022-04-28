@@ -1,11 +1,16 @@
 @use "../setting/color";
 @use "../mixin/btn";
+@use "../setting/function";
 
 // 実績紹介
 .performance{
     position: relative;
     margin-top: 80px;
     padding-top: 40px;
+
+    @include function.mq() {
+        margin-top: 40px;
+    }
 
     .marker{
         padding: 0 0.2em;
@@ -22,18 +27,36 @@
         padding-left: 20px;
         border-left: 2px solid color.$main-color;
         margin-bottom: 40px;
+
+        @include function.mq() {
+            font-size: 20px;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
     }
 
     &_theme{
         font-family: 'Hiragino Mincho ProN', serif;
         margin-bottom: 50px;
         padding-left: 20px;
+
+        @include function.mq() {
+            font-size: 16px;
+            line-height: 1.75;
+            padding-left: unset;
+            margin-bottom: 35px;
+        }
     }
 
     &_inner{
         display: flex;
         justify-content: space-between;
         margin-bottom: clamp(80px,7.1vw,100px);
+
+        @include function.mq() {
+            flex-direction: column;
+            margin-bottom: 50px;
+        }
     }
 
     &_image_box{
@@ -42,6 +65,13 @@
         width: 45%;
         height: 95vh;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+        @include function.mq() {
+            width: 100%;
+            height: unset;
+            aspect-ratio: 295/185;
+            margin-bottom: 35px;
+        }
     }
 
     &_image{
@@ -50,10 +80,22 @@
 
     &_textarea{
         width: 50%;
+
+        @include function.mq() {
+            width: 100%;
+        }
     }
 
     &_text_block{
         margin-bottom: clamp(32px,2.9vw,40px);
+
+        @include function.mq() {
+            margin-bottom: 25px;
+        }
+
+        &:last-child{
+            margin-bottom: unset;
+        }
 
         &_title{
             font-size: clamp(16px,1.3vw,18px);
@@ -61,6 +103,12 @@
             margin-bottom: 15px;
             padding-left: 28px;
             position: relative;
+
+            @include function.mq() {
+                font-size: 16px;
+                padding-left: 20px;
+                margin-bottom: 10px;
+            }
 
             &::before{
                 position: absolute;
@@ -72,6 +120,11 @@
                 top: 50%;
                 left: 0;
                 transform: translateY(-50%);
+
+                @include function.mq() {
+                    width: 12px;
+                    height: 12px;
+                }
             }
         }
 
@@ -80,6 +133,11 @@
             padding-left: 8px;
             line-height: 1.78;
             text-align: justify;
+
+            @include function.mq() {
+                font-size: 14px;
+                line-height: 1.5
+            }
         }
     }
     
@@ -96,18 +154,30 @@
         &.site{
             background-color: color.$sub-color;
             margin-bottom: 10px;
+
+            @include function.mq() {
+                margin-bottom: 5px;
+            }
         }
 
         &.git{
             background-color: color.$main-color;
             margin-bottom: 120px;
+
+            @include function.mq() {
+                margin-bottom: 85px;
+            }
         }
 
         &_text{
             display: inline-block;
-            padding-right: 40px;
+            padding-right: 10%;
             font-size: clamp(16px,1.5vw,20px);
             position: relative;
+
+            @include function.mq() {
+                padding-right: 28px;
+            }
 
             $tb_clp: clamp(14px,1.3vw,18px);
 

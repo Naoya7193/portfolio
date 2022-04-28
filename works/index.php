@@ -1,10 +1,10 @@
 <?php include '../inc/header.php'; ?>
 
 <!-- ページタイトル -->
-<div class="pagetitle wrapper">WORKS</div>
+<div class="pagetitle wrapper wrapper_sp">WORKS</div>
 
 <!-- 実績紹介01 -->
-<div class="performance wrapper" id="kitahama">
+<div class="performance wrapper wrapper_sp" id="kitahama">
     <div class="tag_area">
         <p class="tag team">チーム制作</p>
         <p class="tag cording">コーディング</p>
@@ -64,7 +64,7 @@
 
 
 <!-- 実績紹介02 -->
-<div class="performance wrapper" id="mk">
+<div class="performance wrapper wrapper_sp" id="mk">
     <div class="tag_area">
         <p class="tag team">チーム制作</p>
         <p class="tag cording">コーディング</p>
@@ -124,7 +124,7 @@
 
 
 <!-- 実績紹介03 -->
-<div class="performance wrapper" id="fujimetal">
+<div class="performance wrapper wrapper_sp" id="fujimetal">
     <div class="tag_area">
         <p class="tag team">チーム制作</p>
         <p class="tag cording">コーディング</p>
