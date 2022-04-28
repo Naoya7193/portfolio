@@ -319,6 +319,11 @@ html {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+@media (max-width: 768px) {
+  .skill_container {
+    justify-content: center;
+  }
+}
 .skill_box {
   width: calc(50% - 15px);
   margin-bottom: 50px;
@@ -329,7 +334,13 @@ html {
 @media (max-width: 1146px) {
   .skill_box {
     width: 100%;
+    margin: 0 auto;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .skill_box {
+    max-width: 400px;
   }
 }
 .skill_box_inner {
@@ -337,9 +348,9 @@ html {
   justify-content: space-between;
   padding: 20px 20px 20px 12px;
 }
-@media (max-width: 1146px) {
+@media (max-width: 768px) {
   .skill_box_inner {
-    justify-content: unset;
+    flex-direction: column;
   }
 }
 .skill_box:last-child {
@@ -358,6 +369,12 @@ html {
   height: 155px;
   min-width: 155px;
   position: relative;
+}
+@media (max-width: 768px) {
+  .skill_name_box {
+    width: 100%;
+    height: 50px;
+  }
 }
 .skill_name_box::after {
   position: absolute;
@@ -380,6 +397,12 @@ html {
   padding-bottom: 10px;
   position: relative;
 }
+@media (max-width: 768px) {
+  .skill_name {
+    font-size: 28px;
+    padding-bottom: unset;
+  }
+}
 .skill_name::after {
   position: absolute;
   content: "";
@@ -389,9 +412,19 @@ html {
   transform: translateX(-50%);
   bottom: 0;
 }
+@media (max-width: 768px) {
+  .skill_name::after {
+    content: unset;
+  }
+}
 .skill_type {
   font-size: 16px;
   padding-top: 6px;
+}
+@media (max-width: 768px) {
+  .skill_type {
+    display: none;
+  }
 }
 .skill_summary {
   display: flex;
@@ -405,11 +438,30 @@ html {
 @media (max-width: 1146px) {
   .skill_summary {
     margin: 0 auto;
-    font-size: 16px;
+    font-size: 14px;
+    width: 85%;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .skill_summary {
+    padding-left: unset;
+    margin-top: 15px;
   }
 }
 .skill .other {
   width: 100%;
+  max-width: unset;
+}
+@media (max-width: 1146px) {
+  .skill .other {
+    max-width: 500px;
+  }
+}
+@media (max-width: 768px) {
+  .skill .other {
+    max-width: 400px;
+  }
 }
 .skill .other .skill_summary {
   width: 85%;
@@ -419,7 +471,7 @@ html {
 @media (max-width: 1146px) {
   .skill .other .skill_summary {
     flex-direction: column;
-    width: 63%;
+    width: 85%;
   }
 }
 .skill .other .skill_summary_box {
@@ -1159,7 +1211,8 @@ html {
 @media (max-width: 768px) {
   .about_section {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 30px;
+    padding-bottom: 50px;
   }
 }
 .about_section_title {

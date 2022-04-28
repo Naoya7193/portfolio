@@ -134,7 +134,7 @@
             </div>
             <div class="career_textarea">
                 <div class="career_title">同志社大学にて研究に専念</div>
-                <div class="career_text">卒業研究のテーマは「サッカーの試合における戦況変化点のリアルタイム抽出とその要因の考察」。この研究は<span>日本統計学会のポスター部門にて発表</span>させていただき、最優秀賞をいただきました。その他にも<span>ECサイトのPOSデータやテレビCMの視聴履歴データ等の分析</span>を行いました。</div>
+                <div class="career_text">卒業研究のテーマは「サッカーの試合における戦況変化点のリアルタイム抽出とその要因の考察」。この研究は<span>日本統計学会のポスター部門</span>にて発表させていただき、最優秀賞をいただきました。その他にも<span>ECサイトのPOSデータやテレビCMの視聴履歴データ等の分析</span>を行いました。</div>
                 <div class="career_award">
                     <p class="career_award_title">受賞歴</p>
                     <div class="career_award_textarea">
@@ -161,7 +161,7 @@
             </div>
             <div class="career_textarea">
                 <div class="career_title">Webスクールへの通学を開始</div>
-                <div class="career_text"><span>「Web開発が出来るようになりたい」</span>という思いでWebスクールに入校。ものづくりもプログラムも好きだったため、自分の書いたコードのアウトプットが視覚的に確認できることに面白みを感じました。Webスクールのカリキュラムは全て修了し、フロントエンドエンジニアになるために制作と勉強を続けています。</div>
+                <div class="career_text"><span>「Web開発が出来るようになりたい」</span>という思いでWebスクールに入校。現在はWebスクールのカリキュラムを全て修了し、フロントエンドエンジニアになるために制作と勉強を続けています。</div>
             </div>
         </div>
     </div>

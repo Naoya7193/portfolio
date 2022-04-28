@@ -88,7 +88,7 @@
                     <div class="skill_summary">
                         <div class="skill_summary_box">
                             <div class="skill_title">PHP</div>
-                            <div class="other_skill_summary">WPの子テーマを複数人で開発した経験があります</div>
+                            <div class="other_skill_summary">WPのテーマを複数人で開発した経験があります</div>
                         </div>
 
                         <div class="skill_summary_box">
