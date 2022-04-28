@@ -1,13 +1,13 @@
 <?php include '../inc/header.php'; ?>
 
 <!-- ページタイトル -->
-<div class="pagetitle wrapper">ABOUT</div>
+<div class="pagetitle wrapper wrapper_sp">ABOUT</div>
 
 <!-- Naoya Fujimoto -->
 <section class="about_section wrapper">
     <h2 class="about_section_title">Naoya Fujimoto</h2>
     <div class="about_section_mv">
-        <div class="about_section_textarea">
+        <div class="about_section_textarea wrapper_sp_lg">
             <p class="about_section_text">「ものづくり」が好き</p>
             <p class="about_section_text">「プログラミング」が好き</p>
             <p class="about_section_text">「考えること」が好き</p>
@@ -25,7 +25,7 @@
 <!-- モットー -->
 <section class="about_section wrapper" id="motto">
     <h2 class="about_section_title">Motto</h2>
-    <div class="motto">
+    <div class="motto wrapper_sp">
         <div class="motto_box">
             <div class="motto_box_title_block">
                 <div class="motto_box_number">01</div>
@@ -59,7 +59,7 @@
 <!-- キャリア -->
 <section class="about_section wrapper" id="career">
     <h2 class="about_section_title">Career</h2>
-    <div class="career">
+    <div class="career wrapper_sp">
         <div class="career_box">
             <div class="career_year">
                 <div class="career_year_box">1996</div>

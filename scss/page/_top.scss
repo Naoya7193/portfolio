@@ -97,6 +97,7 @@
         margin-bottom: 50px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         transition: .3s all;
+        max-width: 500px;
 
         @include function.mq("lg") {
             width: 100%;
