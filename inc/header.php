@@ -57,7 +57,7 @@
             <li><a href="/">HOME</a></li>
             <li><a href="/#skill">SKILL</a></li>
             <li><a href="./works">WORKS</a></li>
-            <li><a href="/about">ABOUT</a></li>
+            <li><a href="./about">ABOUT</a></li>
         </ul>
     </nav>
 </div>
@@ -66,9 +66,17 @@
 <!-- スマホ用ヘッダー -->
 <div class="header">
     <div class="header_inner wrapper_sp_lg">
-        <img src="./image/logo.png" alt="ロゴの画像" class="header_logo">
+        <a class="header_logo" href="/"></a>
         <div class="hamburger_menu"></div>
     </div>
+    <div class="header_nav">
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/#skill">SKILL</a></li>
+                <li><a href="./works">WORKS</a></li>
+                <li><a href="./about">ABOUT</a></li>
+            </ul>
+        </div>
 </div>
 
 

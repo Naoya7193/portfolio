@@ -59,23 +59,94 @@
 
     @include function.mq() {
         width: 100%;
+        display: block;
         opacity: .9;
         position: sticky;
         top: 0;
-        display: flex;
-        justify-content: space-between;
         background-color: color.$white;
         padding-top: 10px;
         padding-bottom: 10px;
         z-index: 20;
     }
 
+    &_inner{
+        @include function.mq() {
+            display: flex;
+            justify-content: space-between;
+
+        }
+    }
+
     &_logo{
         @include function.mq() {
+            display: block;
             width: 80px;
+            background-image: url(../image/logo.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            aspect-ratio: 2/1;
+        }
+    }
+
+    &_nav{
+        @include function.mq() {
+            display: flex;
+            position: fixed;
+            width: 100vw;
+            height: calc(100vh - 60px);
+            top: 60px;
+            background-color: color.$white;
+            flex-direction: column;
+            justify-content: center;
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: .3s transform;
+        }
+
+        ul{
+            height: 55vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        a{
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        .on &{
+            transform: scaleY(1);
+            transform-origin: top;
         }
     }
 }
+
+// ハンバーガーメニュー
+.hamburger_menu{
+    width: 40px;
+    height: 40px;
+
+    &::before {
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-family: 'Material Icons';
+        font-size: 40px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1;
+        content: '\e5d2';
+        color: color.$base-color;
+    
+        .on &{
+            content: '\e5cd';
+        }
+    }
+}
+
 
 // トップに戻るボタン
 .return_top{
